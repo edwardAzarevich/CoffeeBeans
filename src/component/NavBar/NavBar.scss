@@ -1,0 +1,21 @@
+.main-nav-bar {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 45px;
+    height: 100%;
+}
+
+.nav-item {
+    //display: flex;
+    width: auto;
+    height: auto;
+    margin-left: 45px;
+    align-items: start;
+
+    font-family: "Merienda";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
