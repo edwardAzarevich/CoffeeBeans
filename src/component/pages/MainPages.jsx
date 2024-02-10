@@ -1,5 +1,7 @@
 import React from 'react';
 import NavBar from '../navBar/NavBar';
+import './styles/mainStyles.scss';
+import CoffeeBeans from '../CoffeeBeans/CoffeeBeans';
 
 const part1AdoutUs = `
     Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -16,16 +18,29 @@ const part2AdoutUs = `Now residence dashwoods she excellent you. Shade being und
 
 const MainPages = () => {
     return (
-        <div
-            style={{
-                backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderFon.svg)`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                width: '100%',
-                height: '30vh',
-            }}>
-            <NavBar />
-        </div>
+        <>
+            <div
+                className='text-white'
+                style={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderFon.svg)`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    width: '100%',
+                    height: '40vh',
+                }}>
+                <NavBar />
+                <h1 className='fonts text-center text-4xl mb-5'>Everything you love About Coffee</h1>
+                <CoffeeBeans />
+                <h2 className='fonts text-center text-2xl mb-5'>We makes every day full of energy and taste</h2>
+                <h2 className='fonts text-center text-2xl mb-5'>Want to try our beans?</h2>
+                <div className='flex justify-center'>
+                    <button
+                        className="drop-shadow-2xl active:bg-white active:text-black border text-white font-bold py-1 px-10 rounded transition duration-100 ease-in-out transform hover:opacity-70 hover:shadow-md">
+                        More
+                    </button>
+                </div>
+            </div>
+        </>
     );
 };
 
