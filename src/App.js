@@ -2,28 +2,21 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MainPages, Pleasure, Page404 } from './component/pages';
 import OutCoffee from './component/pages/OutCoffee';
+
+export const tabsRoutes = {
+    home: '/',
+    outCoffee: 'OutCoffee',
+    pleassure: 'ForYourPleassure'
+};
 function App() {
-
-    const part1AdoutUs = `
-    Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
-    Afraid at highly months do things on at.Situation recommend objection do intention
-    so questions.As greatly removed calling pleased improve an.Last ask him cold feel
-    met spot shy want.Children me laughing we prospect answered followed.At it went
-    is song that held help face.`;
-
-    const part2AdoutUs = `Now residence dashwoods she excellent you. Shade being under his bed her, Much
-    read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
-    horrible but confined day end marriage. Eagerness furniture set preserved far
-    recommend. Did even but nor are most gave hope. Secure active living depend son
-    repair day ladies now.`;
     return (
         <div >
             <BrowserRouter>
                 <main>
                     <Routes>
-                        <Route path='/' element={<MainPages />} />
-                        <Route path='/OutCoffee' element={<OutCoffee />} />
-                        <Route path='/ForYourPleassure' element={<Pleasure />} />
+                        <Route path={`${tabsRoutes.home}`} element={<MainPages />} />
+                        <Route path={`${tabsRoutes.outCoffee}`} element={<OutCoffee />} />
+                        <Route path={`${tabsRoutes.pleassure}`} element={<Pleasure />} />
                         <Route path='*' element={<Page404 />} />
                     </Routes>
                 </main>
