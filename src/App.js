@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './component/Header/Header';
-import CoffeeBeans from './component/CoffeeBeans/CoffeeBeans';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { MainPages, Pleasure, Page404 } from './component/pages';
+import OutCoffee from './component/pages/OutCoffee';
 function App() {
 
     const part1AdoutUs = `
@@ -19,21 +18,16 @@ function App() {
     repair day ladies now.`;
     return (
         <div >
-            <Header />
-            <div className='about-info' >
-                <i>About Us</i>
-                <CoffeeBeans color={'black'} />
-            </div>
-            <div className='about-us'>
-                <p className='for-parts'>
-                    {part1AdoutUs}
-                </p >
-
-                <p className='for-parts'>
-                    {part2AdoutUs}
-                </p>
-
-            </div>
+            <BrowserRouter>
+                <main>
+                    <Routes>
+                        <Route path='/' element={<MainPages />} />
+                        <Route path='/OutCoffee' element={<OutCoffee />} />
+                        <Route path='/ForYourPleassure' element={<Pleasure />} />
+                        <Route path='*' element={<Page404 />} />
+                    </Routes>
+                </main>
+            </BrowserRouter>
         </div>
     );
 }
