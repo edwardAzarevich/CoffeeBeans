@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../navBar/NavBar';
 import './styles/mainStyles.scss';
 import CoffeeBeans from '../CoffeeBeans/CoffeeBeans';
+import Footer from '../footer/Footer';
 
 const part1AdoutUs = `
     Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -40,6 +41,7 @@ const MainPages = () => {
                     </button>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
