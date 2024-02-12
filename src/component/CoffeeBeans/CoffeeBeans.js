@@ -7,7 +7,7 @@ const CoffeeBeans = ({ color = 'white' }) => {
     const beans = color === 'black' ? beansBlack : beansWhite;
     console.log(color);
     return (
-        <div className='coffee-beans'>
+        <div className='coffee-beans mb-5'>
             <div className='for-line'><hr /></div>
             <img src={beans} alt='Coffee beans' />
             <div className='for-line'><hr /></div>

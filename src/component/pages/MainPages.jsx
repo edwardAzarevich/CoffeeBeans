@@ -21,7 +21,7 @@ const MainPages = () => {
     return (
         <>
             <div
-                className='text-white'
+                className='text-white mb-20'
                 style={{
                     backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderFon.svg)`,
                     backgroundSize: 'cover',
@@ -40,6 +40,11 @@ const MainPages = () => {
                         More
                     </button>
                 </div>
+            </div>
+            <div className='fonts text-center ' >
+                <h2 className='mb-5 text-3xl'>About us</h2>
+                <CoffeeBeans color='black' />
+                <p className=''>{part2AdoutUs}</p>
             </div>
             <Footer />
         </>
