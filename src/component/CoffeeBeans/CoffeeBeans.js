@@ -1,10 +1,13 @@
 import './CoffeeBeans.scss';
-import beans from './image/Vector.svg';
+import beanss from './image/Vector.svg';
 import beansWhite from './image/coffee-beans-white.svg';
+import beansBlack from './image/coffee-beans-black.svg';
 
-const CoffeeBeans = () => {
+const CoffeeBeans = ({ color = 'white' }) => {
+    const beans = color === 'black' ? beansBlack : beansWhite;
+    console.log(color);
     return (
-        <div className='coffee-beans'>
+        <div className='coffee-beans mb-5'>
             <div className='for-line'><hr /></div>
             <img src={beans} alt='Coffee beans' />
             <div className='for-line'><hr /></div>
