@@ -1,8 +1,7 @@
 import './styles/App.scss';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { MainPages, Pleasure, Page404 } from './component/pages';
+import { MainPages, OutCoffee, Pleasure, Page404 } from './component/pages'
 import { useState, useEffect } from 'react';
-import OutCoffee from './component/pages/OutCoffee';
 import NavBar from './component/navBar/NavBar';
 export const tabsRoutes = {
     home: '/',

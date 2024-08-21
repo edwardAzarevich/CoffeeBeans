@@ -1,17 +1,16 @@
 .App {
     .fadeIn {
-        animation: 0.5s fadeIn forwards;
-        background-color: #61dafb;
+        animation: 0.75s fadeIn forwards;
       }
       
       .fadeOut {
-        animation: 0.5s fadeOut forwards;
+        animation: 0.75s fadeOut forwards;
       }
       
       @keyframes fadeIn {
         from {
           opacity: 0;
-          transform: translate(-20px, 0);
+          transform: translate(-40px, 0);
         }
         to {
           opacity: 1;
@@ -25,7 +24,7 @@
           transform: translate(0px, 0px);
         }
         to {
-          transform: translate(-20px, 0);
+          transform: translate(-40px, 0);
           opacity: 0;
         }
       }

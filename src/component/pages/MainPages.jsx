@@ -46,7 +46,7 @@ const MainPages = () => {
                 <CoffeeBeans color='black' />
                 <p className=''>{part2AdoutUs}</p>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
