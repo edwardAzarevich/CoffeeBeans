@@ -30,7 +30,7 @@ const MainPages = () => {
                     height: '40vh',
                 }}>
                 <NavBar />
-                <h1 className='fonts text-center text-4xl mb-5'>Everything you love About Coffee</h1>
+                <h1 className='fonts text-center text-4xl mb-5 '>Everything you love About Coffee</h1>
                 <CoffeeBeans />
                 <h2 className='fonts text-center text-2xl mb-5'>We makes every day full of energy and taste</h2>
                 <h2 className='fonts text-center text-2xl mb-5'>Want to try our beans?</h2>
