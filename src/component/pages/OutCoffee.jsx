@@ -1,9 +1,9 @@
 import React from 'react';
-
+import NavBar from '../navBar/NavBar';
 const OutCoffee = () => {
     return (
         <div>
-            <h1>OutCoffee</h1>
+            <NavBar />
         </div>
     );
 };
