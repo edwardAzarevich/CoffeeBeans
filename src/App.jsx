@@ -15,12 +15,6 @@ function App() {
             <BrowserRouter>
                 <NavBar />
                 <main>
-                    {/* <Routes>
-                        <Route path={`${tabsRoutes.home}`} element={<MainPages />} />
-                        <Route path={`${tabsRoutes.outCoffee}`} element={<OutCoffee />} />
-                        <Route path={`${tabsRoutes.pleassure}`} element={<Pleasure />} />
-                        <Route path='*' element={<Page404 />} />
-                    </Routes> */}
                     <Context />
                 </main>
             </BrowserRouter>
